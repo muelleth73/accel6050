@@ -1,9 +1,9 @@
-"""GUI interface for python-template-project using tkinter with integrated logging.
+"""GUI interface for accel using tkinter with integrated logging.
 
-This module provides a graphical user interface for the python-template-project
+This module provides a graphical user interface for the accel
 with settings dialog, file management, and centralized logging capabilities.
 
-run gui: python -m python_template_project.gui
+run gui: python -m accel.gui
 """
 
 import os
@@ -19,9 +19,9 @@ from tkinter import filedialog, messagebox, ttk
 
 from config_cli_gui.gui import SettingsDialogGenerator
 
-from python_template_project.config.config import ConfigParameterManager
-from python_template_project.core.base import BaseGPXProcessor
-from python_template_project.core.logging import (
+from accel.config.config import ConfigParameterManager
+from accel.core.base import BaseGPXProcessor
+from accel.core.logging import (
     connect_gui_logging,
     disconnect_gui_logging,
     get_logger,
@@ -112,7 +112,7 @@ class MainGui:
 
     def __init__(self, root):
         self.root = root
-        self.root.title("python-template-project")
+        self.root.title("accel")
         self.root.geometry("1200x600")  # Increased width for new layout
 
         # Initialize configuration
@@ -510,12 +510,12 @@ class MainGui:
     def _open_help(self):
         """Open help documentation in browser."""
         self.logger.debug("Opening help documentation")
-        webbrowser.open("https://python-template-project.readthedocs.io/en/stable/")
+        webbrowser.open("https://accel.readthedocs.io/en/stable/")
 
     def _show_about(self):
         """Show about dialog."""
         self.logger.debug("Showing about dialog")
-        messagebox.showinfo("About", "python-template-project\n\nCopyright by Paul")
+        messagebox.showinfo("About", "accel\n\nCopyright by Paul")
 
     def _on_closing(self):
         """Handle application closing."""

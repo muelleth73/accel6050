@@ -22,7 +22,7 @@ Here are the ways you can show your support:
 
 The easiest and most direct way to support this project is through **GitHub Sponsors**. You can set up a recurring donation or make a one-time contribution.
 
-[**Become a Sponsor on GitHub**](https://github.com/sponsors/pamagister)
+[**Become a Sponsor on GitHub**](https://github.com/sponsors/muelleth73)
 
 
 ### 2\. Paypal

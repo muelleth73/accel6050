@@ -7,9 +7,9 @@ import gpxpy
 import pytest
 from gpxpy.gpx import GPXTrackPoint
 
-from python_template_project.config.config import ConfigParameterManager
-from python_template_project.core.logging import initialize_logging
-from src.python_template_project.core.base import BaseGPXProcessor
+from accel.config.config import ConfigParameterManager
+from accel.core.logging import initialize_logging
+from src.accel.core.base import BaseGPXProcessor
 
 # ---------------------------------------------------------------------------
 # Fixtures

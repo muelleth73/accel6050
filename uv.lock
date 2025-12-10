@@ -889,7 +889,7 @@ wheels = [
 ]
 
 [[package]]
-name = "python-template-project"
+name = "accel"
 source = { editable = "." }
 dependencies = [
     { name = "config-cli-gui" },

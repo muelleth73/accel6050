@@ -174,7 +174,7 @@ Changelog
 - Feat #14: GUI: mention tkinker in docs. [Paul Magister]
 - Feat #18: Logging enabled in converter logic. [Paul Magister]
 - Merge pull request #15 from
-  pamagister/dependabot/github_actions/softprops/action-gh-release-2.
+  muelleth73/dependabot/github_actions/softprops/action-gh-release-2.
   [Paul Magister]
 
   Bump softprops/action-gh-release from 1 to 2
