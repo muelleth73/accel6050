@@ -8,7 +8,7 @@ source = { editable = "." }
 dependencies = [
     { name = "docopt" },
     { name = "mpu6050-raspberrypi", marker = "platform_machine == 'aarch64'" },
-    { name = "sensorspi" },
+    { name = "senspi" },
     { name = "smbus", marker = "platform_machine == 'aarch64'" },
 ]
 
@@ -27,7 +27,7 @@ dev = [
 requires-dist = [
     { name = "docopt", specifier = ">=0.6.2" },
     { name = "mpu6050-raspberrypi", marker = "platform_machine == 'aarch64'", specifier = ">=1.2" },
-    { name = "sensorspi", directory = "../sensor-spi" },
+    { name = "senspi", git = "https://github.com/muelleth73/sensor-spi.git" },
     { name = "smbus", marker = "platform_machine == 'aarch64'", specifier = ">=1.1" },
 ]
 
@@ -283,30 +283,13 @@ wheels = [
 ]
 
 [[package]]
-name = "sensorspi"
-source = { directory = "../sensor-spi" }
+name = "senspi"
+version = "0.0.1.dev6+2d9a950"
+source = { git = "https://github.com/muelleth73/sensor-spi.git#2d9a95059a292135a33cfbdfa7911883709e0c18" }
 dependencies = [
     { name = "docopt" },
     { name = "pyyaml" },
     { name = "types-pyyaml" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "docopt", specifier = ">=0.6.2" },
-    { name = "pyyaml", specifier = "==6.0.*" },
-    { name = "types-pyyaml", specifier = ">=6.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "basedpyright", specifier = ">=1.38.0" },
-    { name = "codespell", specifier = ">=2.4.1" },
-    { name = "funlog", specifier = ">=0.2.1" },
-    { name = "pytest", specifier = ">=9.0.2" },
-    { name = "pytest-sugar", specifier = ">=1.1.1" },
-    { name = "rich", specifier = ">=14.3.2" },
-    { name = "ruff", specifier = ">=0.15.1" },
 ]
 
 [[package]]
