@@ -6,6 +6,7 @@ from typing import Any
 
 from mpu6050 import mpu6050
 from senspi.constants import NUMBER_PARAMETERS
+from senspi.readconfig import get_logger
 
 """
 Read MPU6050 data
@@ -31,7 +32,7 @@ SCHEMA = {
     TEMP_KEY: NUMBER,
 }
 
-log = logging.getLogger(__name__)
+log = get_logger(__name__)
 
 
 def initialize(parameters: Mapping[str, Any] = {}) -> Callable[[], dict[str, Any]]:
